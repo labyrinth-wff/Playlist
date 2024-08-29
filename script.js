@@ -59,13 +59,13 @@ function Shuffle()
 	if (OnceS === false)
 	{
 		Rand = Math.floor(Math.random() * 130) + 1;
-		X = Shu[Rand];
+		X = Rand;
 		OnceS = true;
 	}
 	X++;
 	Stop();
-	console.log(X);
-	Name = Path.concat(X.toString().concat(Ext));
+	console.log(Shu[X]);
+	Name = Path.concat(Shu[X].toString().concat(Ext));
 	Play = new Audio(Name);
 	Play.addEventListener('ended', () => {
 		Shuffle();
