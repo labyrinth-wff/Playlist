@@ -75,7 +75,7 @@ function Shuffle()
 	console.log('Volume:', Vol);
 	});
 	Play.volume = Vol;
-	document.getElementById('Name').innerHTML = Names[Shu[X]];
+	document.getElementById('Name').innerHTML = Names[Shu[X] - 1];
 	Play.play();
 }
 
