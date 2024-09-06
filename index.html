@@ -4,17 +4,16 @@
 	<title>Playlist</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<script>var Clicks = 0; var Clicks1 = 0; var audio = new Audio('Aud.mp3'); var Play = new Audio("Playlist/1.mp3"); Play.volume = 0.025; audio.load(); var Path = "Playlist/"; var X = 1; var Ext = ".mp3"; var Name = "";</script>
-	<script type="text/javascript" src="script.js"></script>
 </head>
 <body style="background-color: #000000; position: relative; color: #dddddd;">
 	<center><h1 style="color: #dddddd; font-family: Arial;">Sanity(Extended)</h1></center>
-	<center><h3 id="Temp" style="color: #dddddd; font-family: Arial;">Don't worry this site won't put malware on your PC 🙄</h3></center>
+	<center><h3 id="Temp" style="color: #dddddd; font-family: Arial;">‎</h3></center>
 	<div style="z-index: 20; position: fixed; padding-left: 100%; left: 50%; transform: translate(-50%, 50%); line-height: 250%; background-color: #ff0000; width: 7.5%; text-align: center;">
 	<div style="z-index: 19; position: absolute; left: 50%; margin-top: -1%; transform: translate(-50%, 50%); line-height: 250%; color: #000000; width: 50%; text-align: center; font-family: Arial;"><div class="Box1" style="cursor: default; background-color: #000000">A</div></div>
 	<div style="z-index: 19; position: absolute; left: 50%; margin-top: 0.7%; transform: translate(-50%, 50%); line-height: 250%; color: #000000; width: 50%; text-align: center; font-family: Arial;"><div class="Box1" style="cursor: default; background-color: #000000">A</div></div>
-	<div onclick="PlayAll();" style="z-index: 20; position: absolute; left: 40%; transform: translate(-50%, 50%); line-height: 250%; color: #dddddd; width: 7.5%; text-align: center; font-family: Arial;"><div class="Box1">Play</div></div>
-	<div onclick="Shuffle();" style="z-index: 20; position: absolute; left: 50%; transform: translate(-50%, 50%); line-height: 250%; color: #dddddd; width: 7.5%; text-align: center; font-family: Arial;"><div class="Box1">Shuffle</div></div>
-	<div onclick="Stop(); console.log(Play.currentTime);" style="z-index: 20; position: absolute; left: 60%; transform: translate(-50%, 50%); line-height: 250%; color: #dddddd; width: 7.5%; text-align: center; font-family: Arial;"><div class="Box1">Stop</div></div>
+	<div style="z-index: 20; position: absolute; left: 40%; transform: translate(-50%, 50%); line-height: 250%; color: #dddddd; width: 7.5%; text-align: center; font-family: Arial;"><div class="Box1">Play</div></div>
+	<div style="z-index: 20; position: absolute; left: 50%; transform: translate(-50%, 50%); line-height: 250%; color: #dddddd; width: 7.5%; text-align: center; font-family: Arial;"><div class="Box1">Shuffle</div></div>
+	<div style="z-index: 20; position: absolute; left: 60%; transform: translate(-50%, 50%); line-height: 250%; color: #dddddd; width: 7.5%; text-align: center; font-family: Arial;"><div class="Box1">Stop</div></div>
 	</div>
 	<hr>
 	<a onclick="Clicks += 1;
@@ -27,138 +26,10 @@
 		<input style="position: fixed; left: 95%; writing-mode: vertical-lr; direction: rtl;" type="range" id="V" min="0" max="0.5" step="0.025" value="0.025">
 		<h1 style="position: absolute; top: 10%; font-size: 20px; font-family: Arial;">Now Playing: </h1>
 		<h1 id="Name" style="position: absolute; top: 30%; font-size: 20px; font-family: Arial; font-weight: 100;"></h1>
-	</center>
 	<div style="position: absolute; left: 50%; transform: translate(-50%, 0); line-height: 250%; color: #dddddd; font-family: Arial;">
-		<br><div onclick="PlayOnce(1);" class="Box">$Werve Dawning [speed up]
-		<br></div><div onclick="Clicks1++; if (Clicks1 === 5) { location.href = 'monster.mp4'; }" class="Box"><strong>[Removed from playlist]</strong>
-		<br></div><div onclick="PlayOnce(3);" class="Box">509 $icario & Yvetzal - Supra Love!
-		<br></div><div onclick="PlayOnce(4);" class="Box">68R - Corpse x Scarlxrd - MISA MISA! (68R Remix)
-		<br></div><div onclick="PlayOnce(5);" class="Box">808Monster - 808Monster MONEY IN MY POCKET(Official Audio)(CHILL PHONK, DouYin Remix)
-		<br></div><div onclick="PlayOnce(6);" class="Box">ANGUISH - ANGUISH, ПОЧТИСЧАСТЛИВ & ily – Glaza 
-		<br></div><div onclick="PlayOnce(7);" class="Box">After Dark - ( Rock Version ) [ sped-up ]
-		<br></div><div onclick="PlayOnce(8);" class="Box">Agnes Burnett - sektorjazza - red crystal castles
-		<br></div><div onclick="PlayOnce(9);" class="Box">Bloom Jpn-TOUCHÉ(speed up)
-		<br></div><div onclick="PlayOnce(10);" class="Box">Cayman cline x tounge tied  sped up
-		<br></div><div onclick="PlayOnce(11);" class="Box">Coffin Nails
-		<br></div><div onclick="PlayOnce(12);" class="Box">Crim3s - Lost
-		<br></div><div onclick="PlayOnce(13);" class="Box">Crystal Castles - Suffocation
-		<br></div><div onclick="PlayOnce(14);" class="Box">DJ FLG - Pianissimo
-		<br></div><div onclick="PlayOnce(15);" class="Box">DJ Vilão DS, MC Zudo Boladão, & DJ Magrin Da DZ7 - Ela Vira Mortal
-		<br></div><div onclick="PlayOnce(16);" class="Box">DVRKINLSDE - Dead Soul (Sped Up)
-		<br></div><div onclick="PlayOnce(17);" class="Box">DVRST & my!lane - Close Feeling
-		<br></div><div onclick="PlayOnce(18);" class="Box">DVRST - Dream Space (Sped Up)
-		<br></div><div onclick="PlayOnce(19);" class="Box">DVRST, safetypleace, & Nia.wave - Rays of Serenity
-		<br></div><div onclick="PlayOnce(20);" class="Box">Danse Macabre
-		<br></div><div onclick="PlayOnce(21);" class="Box">Do you wanna slowed Or SpeedUp Version_ - Skyplaya - Butterflies (SpeedUp) #chillphonk
-		<br></div><div onclick="PlayOnce(22);" class="Box">Do you wanna slowed Or SpeedUp Version_ - VXLLAIN - Distant Echoes (UltraSpeed)
-		<br></div><div onclick="PlayOnce(23);" class="Box">Dual Damage - Love Death
-		<br></div><div onclick="PlayOnce(24);" class="Box">Exomni - Future Evolution
-		<br></div><div onclick="PlayOnce(25);" class="Box">Exsire & Vilaxxs - Infinite Nights
-		<br></div><div onclick="PlayOnce(26);" class="Box">FORGOTTENAGE - End of the World
-		<br></div><div onclick="PlayOnce(27);" class="Box">FRE$HER - Blossom (Feat. IHAVEONECHANCE)
-		<br></div><div onclick="PlayOnce(28);" class="Box">GREEN ORXNGE - D.I.E.   SPEED UP
-		<br></div><div onclick="PlayOnce(29);" class="Box">Geoxor - Gloom
-		<br></div><div onclick="PlayOnce(30);" class="Box">Hensonn - Diamonds
-		<br></div><div onclick="PlayOnce(31);" class="Box">Hensonn - Scape (Sped Up)
-		<br></div><div onclick="PlayOnce(32);" class="Box">IDLEGLANCE - NUEKI x VØJ x NARVENT x TOLCHONOV - AURORA
-		<br></div><div onclick="PlayOnce(33);" class="Box">Jugando Free Fire Phonk Remix (Slowed and reverb)
-		<br></div><div onclick="PlayOnce(34);" class="Box">KORDHELL - MEMPHIS DOOM
-		<br></div><div onclick="PlayOnce(35);" class="Box">KORDHELL - MURDER PLOT (Lyrics)
-		<br></div><div onclick="PlayOnce(36);" class="Box">KUTE x Razihel _ANUBIS (Sped Up)_
-		<br></div><div onclick="PlayOnce(37);" class="Box">Kawai - MEMORY REBOOT x A REAL HERO MASHUP
-		<br></div><div onclick="PlayOnce(38);" class="Box">Kim, Øneheart - nightexpress
-		<br></div><div onclick="PlayOnce(39);" class="Box">Kordhell - Dat Phonk
-		<br></div><div onclick="PlayOnce(40);" class="Box">Kordhell - Glitch Krush
-		<br></div><div onclick="PlayOnce(41);" class="Box">LOWX - DANCE ON THE MOON (SPEED UP)
-		<br></div><div onclick="PlayOnce(42);" class="Box">LXNGVX - Montagem Mysterious Game (Sped up)
-		<br></div><div onclick="PlayOnce(43);" class="Box">LXRY PXNK & XTOM - Time
-		<br></div><div onclick="PlayOnce(44);" class="Box">Lil Cla - Pixies - Where Is My Mind_ (sped up)
-		<br></div><div onclick="PlayOnce(45);" class="Box">MATA RATO DO CASARÃO 1.0 (speed up)
-		<br></div><div onclick="PlayOnce(46);" class="Box">MEMBER - DEATH77
-		<br></div><div onclick="PlayOnce(47);" class="Box">MEMBER - TOO AGGRO
-		<br></div><div onclick="PlayOnce(48);" class="Box">MY!LANE - THIS FEELING (slowed  reverb)
-		<br></div><div onclick="PlayOnce(49);" class="Box">MoonDeity  - WAKE UP!  SPEED UP
-		<br></div><div onclick="PlayOnce(50);" class="Box">Mr.Kitty- After dark (speed upnightcore)
-		<br></div><div onclick="PlayOnce(51);" class="Box">NIGHT DRIVE PHONK
-		<br></div><div onclick="PlayOnce(52);" class="Box">NUEKI, TOLCHONOV - HIT! (Agressive Phonk)
-		<br></div><div onclick="PlayOnce(53);" class="Box">Nakani - Moss
-		<br></div><div onclick="PlayOnce(54);" class="Box">Narvent - Her Eyes
-		<br></div><div onclick="PlayOnce(55);" class="Box">NineLaps - DVRST - Dream Space (slowed + reverb)
-		<br></div><div onclick="PlayOnce(56);" class="Box">No Limit
-		<br></div><div onclick="PlayOnce(57);" class="Box">ODECORE & Odetari - DICE AND ROLL (Instrumental)
-		<br></div><div onclick="PlayOnce(58);" class="Box">PHONK DOMAIN - Hensonn _Scape (Slowed)_
-		<br></div><div onclick="PlayOnce(59);" class="Box">PHONK DOMAIN - KUTE _EVERY NIGHT (Sped Up)_
-		<br></div><div onclick="PlayOnce(60);" class="Box">PHONK DOMAIN - Kordhell x Scarlxrd _I FEEL ALIVE_
-		<br></div><div onclick="PlayOnce(61);" class="Box">PHXNKPLAYA - My Hood (Official Music Video)
-		<br></div><div onclick="PlayOnce(62);" class="Box">PISTA TOMA (SPED UP)
-		<br></div><div onclick="PlayOnce(63);" class="Box">POLSD - Close Eyes (Sped-up)#nightcore #phonk #spedup
-		<br></div><div onclick="PlayOnce(64);" class="Box">Pastel Ghost - Dark Beach
-		<br></div><div onclick="PlayOnce(65);" class="Box">Qrtyzz - memories deleted
-		<br></div><div onclick="PlayOnce(66);" class="Box">Rainy Night Drive - PRXSXNT FXTURE x glexks
-		<br></div><div onclick="PlayOnce(67);" class="Box">Rizler - COLD - Rizler (Phonk)
-		<br></div><div onclick="PlayOnce(68);" class="Box">S1ngxxl - Galaxy
-		<br></div><div onclick="PlayOnce(69);" class="Box">SARCOMA HORROR - witch.tape
-		<br></div><div onclick="PlayOnce(70);" class="Box">SHADOW DANCE x SLAUGHTER HOUSE 2  [P4nMusic PHONK MASHUP]
-		<br></div><div onclick="PlayOnce(71);" class="Box">STM, akiaura, & LONOWN - Sleepwalker (Ultra Slowed & Reverb)
-		<br></div><div onclick="PlayOnce(72);" class="Box">Sidewalks and Skeletons - Goth (Sped up + Reverb)
-		<br></div><div onclick="PlayOnce(73);" class="Box">Sidewalks and Skeletons - Goth
-		<br></div><div onclick="PlayOnce(74);" class="Box">Sidewalks and Skeletons - Rapture
-		<br></div><div onclick="PlayOnce(75);" class="Box">SimpsonWave1995 (ultra speed up)
-		<br></div><div onclick="PlayOnce(76);" class="Box">Slowęd - Bęatz - VXLLAIN - Shattered Memories (Super Slowed)
-		<br></div><div onclick="PlayOnce(77);" class="Box">Stegosaurus Rex - Nowhere To Run
-		<br></div><div onclick="PlayOnce(78);" class="Box">Sx1nxwy & SCXR SOUL - SCXR SOUL - Empty Space (Phonk House)
-		<br></div><div onclick="PlayOnce(79);" class="Box">TheGoldenYami  - MY!LANE - CLOSE TO ME (slowed + reverb)
-		<br></div><div onclick="PlayOnce(80);" class="Box">Transition_1
-		<br></div><div onclick="PlayOnce(81);" class="Box">Transition_2
-		<br></div><div onclick="PlayOnce(82);" class="Box">Transition_3
-		<br></div><div onclick="PlayOnce(83);" class="Box">Transition_4
-		<br></div><div onclick="PlayOnce(84);" class="Box">URY - HADES
-		<br></div><div onclick="PlayOnce(85);" class="Box">VALI$BEATS - TECH PHONK ( OFFICIAL AUDIO )
-		<br></div><div onclick="PlayOnce(86);" class="Box">VOSZA - are u ok_
-		<br></div><div onclick="PlayOnce(87);" class="Box">VXLLAIN - Shattered Memories (sped up)
-		<br></div><div onclick="PlayOnce(88);" class="Box">VØJ x Narvent _Memory Reboot (Sped Up)_
-		<br></div><div onclick="PlayOnce(89);" class="Box">WEEDMANE - SUICIDE YEAR
-		<br></div><div onclick="PlayOnce(90);" class="Box">WEEDMANE - Suicide Year (sped up)(1)
-		<br></div><div onclick="PlayOnce(91);" class="Box">WEEDMANE - Suicide Year (sped up)
-		<br></div><div onclick="PlayOnce(92);" class="Box">Waves
-		<br></div><div onclick="PlayOnce(93);" class="Box">Wilee - Night Drive (Sped Up)
-		<br></div><div onclick="PlayOnce(94);" class="Box">Wilee - Night Drive
-		<br></div><div onclick="PlayOnce(95);" class="Box">Wilee x HOSPICEMANE _Cold Blood (Sped Up)_
-		<br></div><div onclick="PlayOnce(96);" class="Box">Wilee x HOSPICEMANE _Cold Blood_
-		<br></div><div onclick="PlayOnce(97);" class="Box">Workout - PRIMU$ PHONK [Sped up]
-		<br></div><div onclick="PlayOnce(98);" class="Box">X-WAYNE SH3TLVIZ - RAMPAGE (speed up)
-		<br></div><div onclick="PlayOnce(99);" class="Box">Zyzz music radio - Clarity hardstyle remix(Long version)
-		<br></div><div onclick="PlayOnce(100);" class="Box">_H3YITZJ0HN_ - HUSSVRX - MEMORIES (SPED UP)
-		<br></div><div onclick="PlayOnce(101);" class="Box">akiaura & Olya Holiday - veil
-		<br></div><div onclick="PlayOnce(102);" class="Box">akiaura, LONOWN, & Olya Holiday - Midnight Skin
-		<br></div><div onclick="PlayOnce(103);" class="Box">crustykris - dark beach - pastel ghost (sped up_nightcore)
-		<br></div><div onclick="PlayOnce(104);" class="Box">eto - lost in thoughts
-		<br></div><div onclick="PlayOnce(105);" class="Box">kordhell - killers from the northside (speed up)
-		<br></div><div onclick="PlayOnce(106);" class="Box">love me again sped up
-		<br></div><div onclick="PlayOnce(107);" class="Box">merunes & ONIMXRU - MERCENARY (slowed)
-		<br></div><div onclick="PlayOnce(108);" class="Box">my!lane & Hxntai Ninja - Chainsaw
-		<br></div><div onclick="PlayOnce(109);" class="Box">my!lane - Close To Me
-		<br></div><div onclick="PlayOnce(110);" class="Box">my!lane - Low Key
-		<br></div><div onclick="PlayOnce(111);" class="Box">my!lane - Low key (sped up)
-		<br></div><div onclick="PlayOnce(112);" class="Box">my!lane - This Feeling  SPEED UP
-		<br></div><div onclick="PlayOnce(113);" class="Box">my!lane - melting (sped up)
-		<br></div><div onclick="PlayOnce(114);" class="Box">my!lane - this feeling (nightcoresped up)
-		<br></div><div onclick="PlayOnce(115);" class="Box">my!line - this feeling  speed upnightcore
-		<br></div><div onclick="PlayOnce(116);" class="Box">netwxrld - ACT$AFE
-		<br></div><div onclick="PlayOnce(117);" class="Box">netwxrld - JUSTICE
-		<br></div><div onclick="PlayOnce(118);" class="Box">rave x scenecore x hardstyle type beat _Shut Your Mouth_ (remix PAIN)
-		<br></div><div onclick="PlayOnce(119);" class="Box">nio - End Of The World Sped Up
-		<br></div><div onclick="PlayOnce(120);" class="Box">p3rvet dumb - Drift In Hell
-		<br></div><div onclick="PlayOnce(121);" class="Box">prolly my spookiest beat (sped up  slowed)
-		<br></div><div onclick="PlayOnce(122);" class="Box">riri  - coldplay - adventure of a lifetime (sped up)
-		<br></div><div onclick="PlayOnce(123);" class="Box">strangecult - ACID BURN
-		<br></div><div onclick="PlayOnce(124);" class="Box">strangecult - IT ECHOES
-		<br></div><div onclick="PlayOnce(125);" class="Box">strangecult - LVL UP
-		<br></div><div onclick="PlayOnce(126);" class="Box">ty wazowski - Calvin Harris - Outside ft. Ellie Goulding (slowed + reverb)
-		<br></div><div onclick="PlayOnce(127);" class="Box">xmb - crystal dreams - sped up
-		<br></div><div onclick="PlayOnce(128);" class="Box">xαяє 闇 - SCARLXRD X KORDHELL - I FEEL ALIVE _ SPEED UP
-		<br></div><div onclick="PlayOnce(129);" class="Box">Øneheart & kim - nightexpress (Sped Up)
-		<br></div><div onclick="PlayOnce(130);" class="Box">𝐍𝐚𝐫𝐯𝐞𝐧𝐭 - 𝐇𝐄𝐑 𝐄𝐘𝐄𝐒 (𝙉𝙞𝙜𝙝𝙩𝙘𝙤𝙧𝙚𝙎𝙥𝙚𝙙 𝙪𝙥 𝙈𝙪𝙛𝙛𝙡𝙚𝙙)</div>
+		<br><div onclick="location.href = 'https://en.wikipedia.org/wiki/Affine_cipher';" class="Box" style="padding-left: 0%; margin-bottom: 5%; width: 105%;"><strong style="color: #ffff00;">This playlist has been closed</strong><br><br>21-15-20 25-12-4 12-1 16-22-14-13-12-24
+		<br></div><div onclick="location.href = 'https://youtu.be/8-SauRazWPw?si=zz0WjBWjkTi_veHo&t=325';" class="Box" style="padding-left: 0%; width: 105%;">Let It Happen</div>
 	</div>
+	</center>
 </body>
 </html>
